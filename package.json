@@ -1,10 +1,10 @@
 {
   "name": "catbee-handlebars",
-  "version": "4.0.5",
+  "version": "4.0.1",
   "description": "Handlebars template provider",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "babel index.js browser/*.js browser/**/*.js lib/*.js lib/**/*.js --out-dir dist",
+    "build": "babel index.js browser/TemplateProvider.js lib/TemplateProvider.js --out-dir dist",
     "prepublish": "npm run build",
     "lint": "eslint ./src"
   },
