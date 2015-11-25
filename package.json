@@ -1,0 +1,33 @@
+{
+  "name": "catbee-handlebars",
+  "version": "4.0.5",
+  "description": "Handlebars template provider",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "babel index.js browser/*.js browser/**/*.js lib/*.js lib/**/*.js --out-dir dist",
+    "prepublish": "npm run build",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markuplab/catbee-handlebars.git"
+  },
+  "browser": {
+    "./dist/lib/vendors/handlebars.js": "./dist/browser/vendors/handlebars.js",
+    "./dist/lib/TemplateProvider.js": "./dist/browser/TemplateProvider.js"
+  },
+  "keywords": [
+    "catbee",
+    "handlebars",
+    "templateProvider"
+  ],
+  "author": {
+    "name": "Kirill Kaysarov",
+    "url": "http://github.com/markuplab"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markuplab/catbee-handlebars/issues"
+  },
+  "homepage": "https://github.com/markuplab/catbee-handlebars"
+}
